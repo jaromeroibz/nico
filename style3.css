@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering */
+  align-items: center;       /* horizontal centering */
+  height: 100vh;             /* full height of viewport */
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000000;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  padding-top: 40px;         /* ⬅️ Espacio arriba del contenido */
+  min-height: 100vh;
+}
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+body img {
+  max-width: 300px;         /* Ajusta el tamaño según te guste */
+  height: auto;
+  margin-top: 40px;         /* Espacio entre el texto y la imagen */
+  background-color: #030303; /* Mismo color que el body */
+  padding: 10px;            /* Opcional, para darle aire */
+  border-radius: 10px;      /* Opcional, para bordes redondeados */
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;        /* Centra verticalmente */
+  justify-content: center;    /* Opcional: centra horizontalmente */
+  gap: 40px;                  /* Espacio entre imagen y texto */
+  padding: 40px;
+  max-width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;            /* Para que se acomode en pantallas pequeñas */
+}
+
+.content-wrapper img {
+  width: 300px;
+  height: auto;
+  background-color: #fff5e6;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.text-block {
+  max-width: 600px;
+  text-align: left;
+}
+
+.text-block h1,
+.text-block h2,
+.text-block h4 {
+  margin-bottom: 15px;
+}
+
